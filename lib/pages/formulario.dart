@@ -125,7 +125,7 @@ class _FormularioPageState extends State<FormularioPage> {
 
       return true;
     } else {
-      //Si se creo el nuevo registro
+      //Si status_sesion es false, quiere decir que el dispositivo ya existe
       setState(() {
         mensaje = "Ya existe este dispositivo!";
       });
@@ -207,6 +207,7 @@ class _FormularioPageState extends State<FormularioPage> {
                 height: 20.0,
                 padding: EdgeInsets.all(20.0),
                 onPressed: () async {
+                  // Aqui se escanea el codigo QR
                   try {
                     //BarcodeScanner.scan(); //this method is used to scan the QR code
                     String codeSanner =
