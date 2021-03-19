@@ -197,6 +197,7 @@ class _FormularioPageState extends State<FormularioPage> {
                 style: TextStyle(fontSize: 16.0),
                 textAlign: TextAlign.center,
               ),
+              // Aqui se muestra el codigo QR
               Text(
                 qrCodeResult,
                 style: estiloTexto,
